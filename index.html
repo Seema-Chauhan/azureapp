@@ -43,9 +43,32 @@ button {
         background-color: lightblue;  
     }   
 </style>   
+<script>
+  function login()
+	{
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("password").value;
+		if(uname =='')
+		{
+			alert("please enter user name.");
+		}
+		else if(pwd=='')
+		{
+        	alert("enter the password");
+		}
+		else if(uname=='testseema' && pwd=='password')
+		{
+			alert("Logged in successfully");
+		}
+		else
+		{
+	alert('Login failed due to incorrect username and password. Try again');
+			}
+	}
+</script>
 </head>    
 <body>    
-    <center> <h1> Student Login Form </h1> </center>   
+    <center> <h1> Login Form </h1> </center>   
     <form>  
         <div class="container">   
             <label>Username : </label>   
